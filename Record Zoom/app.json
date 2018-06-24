@@ -1,0 +1,23 @@
+{
+  "id": "273a3900-c0ec-4b4a-8dfd-2a334c9356a1",
+  "name": "Record Zoom",
+  "publisher": "MarcellusNAV",
+  "brief": "",
+  "description": "This is a demo app that can show all fields from a selected record.",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://marcellusnav.wordpress.com",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
