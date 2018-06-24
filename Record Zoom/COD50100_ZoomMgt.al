@@ -26,7 +26,10 @@ codeunit 50100 "Zoom Management"
             ZoomLine."Source Table" := StrSubstNo('%1 (%2)', RecReference.Name, RecReference.Number);
             ZoomLine."Field No." := FieldReference.Number;
             ZoomLine."Field Name" := FieldReference.Name;
-            ZoomLine."Field Value" := Format(FieldReference.Value);
+            if FieldReference.Type = FieldReference.Type::Blob then
+                ZoomLine."Field Value" := StrSubstNo('Length: %1', FieldReference.Length)
+            else
+                ZoomLine."Field Value" := Format(FieldReference.Value);
             ZoomLine.Insert;
         END;
 
@@ -54,7 +57,6 @@ codeunit 50100 "Zoom Management"
     end;
 
     // Event Subscribers
-
     [EventSubscriber(ObjectType::Page, 22, 'OnAfterActionEvent', 'Zoom In', false, false)]
     local procedure ZoomIn_OnAfterAction_CustomerList(var Rec : Record Customer);
     begin
