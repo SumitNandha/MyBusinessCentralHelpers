@@ -12,6 +12,7 @@ pageextension 50101 "Vendor List Zoom" extends "Vendor List"
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 Image = Database;
+                ApplicationArea = All;
             }
         }
     }

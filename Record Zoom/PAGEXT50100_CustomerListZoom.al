@@ -16,6 +16,7 @@ pageextension 50100 CustomerListZoom extends "Customer List"
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 Image = Database;
+                ApplicationArea = All;
             }
         }
     }
